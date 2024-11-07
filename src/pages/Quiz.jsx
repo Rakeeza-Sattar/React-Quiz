@@ -45,7 +45,7 @@ const Quiz = () => {
 
   return (
     <div
-      className="h-screen flex justify-center items-center"
+      className="h-screen overflow-hidden p-5 flex justify-center items-center"
       style={{
         backgroundImage:
           "url(https://img.freepik.com/free-vector/gradient-grainy-texture_23-2148976545.jpg?t=st=1730892115~exp=1730895715~hmac=026d1101d3b034effa557bc5d14194af7c24a99bb681933b12028755695c32b5&w=740)",
@@ -53,7 +53,7 @@ const Quiz = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-3xl w-full max-w-md shadow-lg p-8 text-center flex flex-col justify-center border border-white border-opacity-30">
+      <div className="bg-white overflow-hidden bg-opacity-20 backdrop-blur-md rounded-3xl w-full max-w-md shadow-lg p-8 text-center flex flex-col justify-center border border-white border-opacity-30">
         {quizComplete ? (
           <Result
             score={score}
